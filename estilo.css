@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #009AEB;
+    --cor02: #00466B;
+    --cor03: #47B4EE;
+    --cor04: #0077B8;
+    --cor05: #1b5370;
+}
+
+/*----------------Escopo Padrão--------------------*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.externo {
+    transition-duration: .5s;
+}
+
+.externo:hover {
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+.externo::after {
+    content: '\1F517';
+}
+
+body,
+html {
+    height: 100%;
+   /* background-image: linear-gradient(to top, var(--cor04), var(--cor03));*/
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-abstrato-azul-formas-geometricas_1035-17545.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.destaque {
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+/*-------------------------------------------------*/
+
+header {
+    height: 15vh;
+    background-color: var(--cor01);
+    text-align: center;
+}
+
+header article {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+main {
+    min-height: 100%;
+    max-height: 400%;
+    position: relative;
+
+}
+
+.sessao {
+    margin: 50px auto;
+    background-color: var(--cor02);
+    min-height: 300px;
+    max-height: 1200px;
+    padding-top: 20px;
+    min-width: 280px;
+    max-width: 1440px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.541);
+}
+
+.quest {
+    background-color: var(--cor04);
+    width: 280px;
+    height: 210px;
+    margin: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.524);
+
+    color: white;
+}
+
+.quest h3 {
+    height: 50%;
+}
+
+.choose {
+    height: 50%;
+}
+
+.alternativa {
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    font-size: 1.1em;
+    margin: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition-duration: 555ms;
+}
+
+.alternativa:hover {
+    padding: 5px;
+    color: white;
+    background-color: black;
+}
+
+
+footer {
+    margin-top: 50px;
+    position: absolute;
+    width: 100%;
+}
+
+.rodape {
+    background-color: var(--cor04);
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+.rodape a {
+    color: white;
+}
